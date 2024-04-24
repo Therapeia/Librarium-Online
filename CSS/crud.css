@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titulos_ini {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+.titulares {
+    background-color: #333;
+    color: white;
+}
+
+.titulares th {
+    padding: 10px;
+}
+
+.tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tr:hover {
+    background-color: #ddd;
+}
+
+.td{
+    text-align: center;
+    align-items: center;
+}
+.botones{
+    text-align: center;
+}
+
+.boton {
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.boton.agregar{
+    background-color: #023eba;
+    color: white;
+}
+.boton.agregar:hover{
+    background-color: #033eb5;
+}
+
+.boton.editar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.boton.editar:hover {
+    background-color: #45a049;
+}
+
+.boton.eliminar {
+    background-color: #f44336;
+    color: white;
+}
+
+.boton.eliminar:hover {
+    background-color: #da190b;
+}
+/* Estilos específicos para los formularios */
+form {
+    padding: 20px;
+    width: auto;
+    max-width: 90%;
+}
+
+.input-box {
+    margin: 20px 0;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #b66d2f;
+    padding: 5px;
+    font-size: 12px;
+    color: #f0f6f4;
+    transition: .3s;
+}
+
+#crear {
+    background: #f0f6f4;
+    color: #b66d2f;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#crear:hover {
+    color: #282119;
+    transform: scale(1.1);
+}
+
+/* Estilos para los formularios emergentes */
+#post-form,
+#post-form2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #b66d2f;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, .4);
+}
